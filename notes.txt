@@ -7,7 +7,7 @@ Puisqu'il s'agit d'eux même, je vais mettre des punchlines et messages qui mett
 
 Premièrement, quelques bases : 
 
-1. Le Header : 
+1. Le Header :
   Il s'agit de mettre quelques liens pratiques et attrayants :
   a) accueil
   b) comment percer (qui dirige vers les différents articles)
