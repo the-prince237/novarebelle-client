@@ -1,17 +1,40 @@
-Comment prendre en main le loading ? tout d'abord, il y a 2 loading à prendre en compte.
-1. Celui qui se produit lorsqu'on va charger une page contenant potentiellement longue à charger.
-2 Celui qui survient lorsqu'un processus est en cours, sans nécessiter une rechargement de page.
+Page d'accueil !
 
-Voici qu'elqu'en soit le cas, les notions à prendre en compte lors du chargement de dononées ou d'une page :
-- la non possibilité pour l'utilisateur de relancer une action déjà en cours.
-- la marque visuelle lorsqu'un élément est en cours.
+La page d'accueil doit centrer les gens sur eux mêmes au premier abord. Il doivent se sentir chez eux !
+Pour ça, les images doivent être familières.
+Puisqu'il s'agit d'art, je vais mettre des images d'artistes populaires.
+Puisqu'il s'agit d'eux même, je vais mettre des punchlines et messages qui mettra en avant ce qu'ils désirent.
 
-Quelques remarques générales :
-1. les pages en chargement lent sont les pages rendu en ssr, avec des données à extraire du serveur de datas.
-2. Les pages en chargement rapide sont les pages rendu en ssr, sans donnée à extraire du serveur de datas.
+Premièrement, quelques bases : 
 
-En conclusion, on peut penser aux solutions suivantes :
-- Les opérations simples font appel à un élément spinner et un tracking du status de l'opération afin d'empêcher des lancements simmultanés de la même opération.
-- Pour le chargement des pages lourdes, le spinner sera aussi de mise sur les boutons sensés lier à ces pages
-- Pour le chargement des pages en ssr, le spinner sera alors en cours d'exécution lors de la création de la page.
-- Pour les opérations de requêtes de données simoles, le spinner sera de mise sur le bouton sensé déclancher l'opération !
+1. Le Header : 
+  Il s'agit de mettre quelques liens pratiques et attrayants :
+  a) accueil
+  b) comment percer (qui dirige vers les différents articles)
+  c) à propos (qui redirige au bas de page où on parle de nova rebelle en général)
+  d) Témoignages (qui ...)
+  e) contact (qui redirige vers le bas de page dans la zone de contact)
+
+2. La composition du home
+  a) le hero : remplie d'images suggestives et d'un titre puissant en avant : 
+    "Dévoile au monde l'artiste de génie qui est en toi"
+    Plus un CTA "comment faire ?" : qui redirige vers la partie 1 de la page qui présente les offres :
+    
+  b) les offres :
+    i) des articles hebdomadaires pour les inspirer, les instruire et les tenir informés des nouveauté du monde de l'art
+    ii) Un site web artiste en 2 jours : cta "quel est l'avantage ?"
+
+  c) Les 3 dernirs articles : 
+    i) titre
+    ii) courte description
+    iii) image
+
+  d) cta d'achat de site web avec promotion
+
+  e) Témoignages
+
+  f) contact côte à côte
+
+  g) CTA pour entrer dans le groupe Whatsapp de mises à jour quotidient
+
+3. Footer mega light : copywriting & social networks
