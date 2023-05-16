@@ -1,6 +1,7 @@
 import Logo from '@/components/Logo/Logo'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { CgRowFirst } from 'react-icons/cg'
 import style from './index.module.css'
 
 const Header = () => {// header bg state
@@ -25,13 +26,13 @@ const Header = () => {// header bg state
           <ul>
             <li className={`${style.navLink} ${style.navLink__bg}`}>
               <span />
-              <Link href="/blog">Comment percer ?</Link>
+              <Link href="/blog"><CgRowFirst />Je veux percer !</Link>
             </li>
-            <li>
+            <li className={style.navLink}>
               <span />
               <Link href="/#testimonies">Témoignages</Link>
             </li>
-            <li>
+            <li className={style.navLink}>
               <span />
               <Link href="/#contac">contact</Link>
             </li>
