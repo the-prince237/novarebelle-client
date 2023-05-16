@@ -1,4 +1,5 @@
 import Metas from '@/components/Metas'
+import Articles from '@/containers/Home/Articles'
 import Hero from '@/containers/Home/Hero'
 import Offers from '@/containers/Home/Offers'
 
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <div className={styles.wrapper}>
           <Offers />
+          <Articles />
         </div>
       </main>
     </div>
