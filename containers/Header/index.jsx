@@ -1,10 +1,43 @@
-import React from 'react'
+import Logo from '@/components/Logo/Logo'
+import Link from 'next/link'
+import React, { useEffect, useState } from 'react'
 import style from './index.module.css'
 
-const Header = () => {
+const Header = () => {// header bg state
+  const [scrolled, setScrolled] = useState(false)
+
+  //scroll event
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 120 ? setScrolled(true) : setScrolled(false)
+    })
+  })
+
   return (
-    <div className={style.header}>
-      Header
+    <div className={`${style.header} ${scrolled && style.header__scrolled}`}>
+      <div className={style.fistSide}>
+        <Link href="/" className={style.logo}>
+          <Logo />
+        </Link>
+      </div>
+      <div className={style.secondSide}>
+        <nav>
+          <ul>
+            <li className={`${style.navLink} ${style.navLink__bg}`}>
+              <span />
+              <Link href="/blog">Comment percer ?</Link>
+            </li>
+            <li>
+              <span />
+              <Link href="/#testimonies">Témoignages</Link>
+            </li>
+            <li>
+              <span />
+              <Link href="/#contac">contact</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   )
 }

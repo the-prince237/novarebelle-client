@@ -1,0 +1,85 @@
+.header{
+  display: flex;
+  width: 100%;
+  height: 120px;
+  max-height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(128, 128, 128, 0.274);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.header__scrolled{
+  height: unset;
+  max-height: unset;
+  padding: 15px;
+  background-color: var(--color-main);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header .secondSide,
+.header .secondSide nav,
+.header .secondSide nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .secondSide nav ul{
+  gap: 15px;
+  color: gray;
+  font-weight: 600;
+}
+
+.header__scrolled .secondSide nav ul{
+  color: rgb(207, 207, 207);
+  font-size: 12px;
+}
+
+.header .secondSide nav ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.header .secondSide nav ul li span{
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background-color: var(--color-sky_blue);
+  border-radius: 5px;
+  transform: translate(100px, -100px);
+}
+
+.header .secondSide nav ul li:hover span{
+  transform: translate(0, -10px);
+}
+
+.header .secondSide nav ul li.navLink__bg{
+  background-color: var(--color-main);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.header__scrolled .secondSide nav ul li.navLink__bg{
+  background-color: var(--color-sky_blue);  
+}
+
+.header .secondSide nav ul li.navLink__bg:hover span{
+  transform: translate(0, -30px);
+  background-color: var(--color-main);
+}
+
+.header .secondSide nav ul li.navLink__bg:hover span{
+  transform: translate(0, -25px);
+  background-color: var(--color-main);
+}
+
+.header__scrolled .secondSide nav ul li.navLink__bg:hover span{
+  background-color: white;
+}

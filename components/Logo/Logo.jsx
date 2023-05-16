@@ -4,8 +4,7 @@ import styles from "./Logo.module.css"
 export default function Logo() {
   return (
     <div className={styles.logo}>
-      <Image width={80} height={80} src="/revenge.png" alt="logo" />
-      {/* <h1>ev<span>enge</span><p>BUY</p></h1> */}
+      <Image width={200} height={200} src="/favicon.png" alt="logo" />
     </div>
   )
 }
