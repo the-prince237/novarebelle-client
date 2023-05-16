@@ -80,6 +80,11 @@ img{
   object-fit: cover;
 }
 
+section{
+  width: 100%;
+  padding: 25px 50px;
+}
+
 .flexed{
   display: flex;
   align-items: center;

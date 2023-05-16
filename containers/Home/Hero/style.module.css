@@ -1,4 +1,9 @@
-.hero, .hero .heroBg{
+.hero{
+  position: relative;
+  width: 100%;
+}
+
+.hero .heroBg{
   position: absolute;
   top: 0;
   left: 0;

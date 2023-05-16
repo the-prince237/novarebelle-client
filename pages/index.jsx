@@ -1,7 +1,8 @@
 import Metas from '@/components/Metas'
 import Hero from '@/containers/Home/Hero'
-import { homeMetas } from '@/metas'
+import Offers from '@/containers/Home/Offers'
 
+import { homeMetas } from '@/metas'
 import styles from './index.module.css'
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
       <Metas title={homeMetas.title} metas={homeMetas.metas} />
       <main className={styles.main}>
         <Hero />
+        <div className={styles.wrapper}>
+          <Offers />
+        </div>
       </main>
     </div>
   )
